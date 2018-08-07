@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ProjectDetails</title>
+</head>
+<body bgcolor="#ccff99">
+<h2>Project Details</h2>
+<table>
+	 <form  onsubmit="successmessage()"> 
+		<tr>
+			<td>Project name</td>
+			<td><input type="text" id="projectname"  required></td>
+		</tr>
+		
+		<tr>
+			<td>Client name</td>
+			<td><input type="text" id="clientname"  required></td>
+		</tr>
+		
+		<tr>
+			<td>Team size</td>
+			<td><input type="text" id="teamsize"  required></td>
+		</tr>
+		
+		<tr>
+			<td><input type="submit" id="submit" value="register"></td>
+		</tr>
+		</form>
+	</table>
+	<script>
+  function successmessage(){
+		  alert("Registration Successfull")
+	  }
+		</script>	
+</body>
+</html>

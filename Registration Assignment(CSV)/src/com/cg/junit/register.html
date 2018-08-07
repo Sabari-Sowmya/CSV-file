@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to register page</title>
+</head>
+<body bgcolor="	#FFB6C1	">
+	<h2>Welcome to project registration</h2>
+	<table>
+		<form action="projectdetails.html"  onsubmit="alertmessage()" method="post">
+		<tr>
+			<td>firstname</td>
+			<td><input type="text" id="firstname" pattern="[A-Za-z]{1,32}"
+				required></td>
+		</tr>
+
+
+		<tr>
+			<td>lastname</td>
+			<td><input type="text" id="lastname" pattern="[A-Za-z]{1,32}"
+				required></td>
+		</tr>
+
+		<tr>
+			<td>email</td>
+			<td><input type="text" id="email" pattern=".+@gmail.com"
+				required title="Must be in this format xxx@gmail.com"></td>
+		</tr>
+
+		<tr>
+			<td>Contact</td>
+			<td><input type="text" id="contact" pattern="[7-9]{1}[0-9]{9}"
+				required></td>
+		</tr>
+
+		<tr>
+			<td>Address</td>
+			<td><input type="text" id="address" required></td>
+		</tr>
+
+		<tr>
+			<td>City</td>0
+			<td><input type="text" id="city" required></td>
+		</tr>
+
+
+		<tr>
+			<td>State</td>
+			<td><select id="state" required>
+					<option value="select">select</option>
+					<option value="TamilNadu">TamilNadu</option>
+					<option value="Kerala">Kerala</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Andhra">Andhra</option>
+					<option value="Maharashtra">Maharashtra</option>
+			</select></td>>
+		</tr>
+		<tr>
+			<td><input type="submit" id="submit" value="register"></td>
+		</tr>
+		
+		<script>
+  function alertmessage(){
+		  alert("Details validated")
+	  }
+		</script>
+		
+	</form>
+
+		</table>
+</body>
+</html>
